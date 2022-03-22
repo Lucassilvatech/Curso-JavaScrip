@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html lang="pr-br">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>If e else</title>
+    <style>
+        body{
+            font:normal 14pt Arial;
+            background-color: blueviolet;
+            color:white;
+            text-align: center;
+            margin: auto;
+        }
+    </style>
+
+</head>
+<body>
+    <h1>Verificação de nacionalidade</h1>
+    <input type="text" name="txtpais" id="txtpais">
+    <input type="button" value="verificar" onclick="analise()">
+    <div id="res"></div>
+
+    <script>
+        function analise(){
+             var pais = window.document.querySelector('input#txtpais')
+             var res = window.document.querySelector('div#res')
+             res.innerHTML = `<p>Você mora em ${pais.value}</p>`
+             if (pais.value == 'Brasil') {
+                 res.innerHTML += `<p>Morando em ${pais.value} você é brasileiro</p>` 
+             }else{
+                 res.innerHTML += `<p>Morando em ${pais.value} você é estrangeiro</p>`
+             }
+        }
+       
+
+    </script>
+    
+</body>
+</html>

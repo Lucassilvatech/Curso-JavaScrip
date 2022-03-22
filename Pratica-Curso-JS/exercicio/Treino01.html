@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Teste</title>
+    <style>
+        body {
+            font: normal 16pt Arial;
+            background: rgb(182, 31, 114);
+            color:white;
+            text-align: center;
+        }
+        input#sn1 {
+       
+            background: rgb(6, 171, 248);
+        }
+        input#sn2 {
+  
+            background: rgb(6, 171, 248);
+        }
+        input#botão {
+            background:rgb(6, 171, 248);
+            color: red;
+        }
+       
+    
+        
+    </style>
+     
+
+
+</head>
+<body>
+    <h1 id="title">Taboada</h1>
+    <input type="number" name="sn1" id="sn1">
+    <input type="number" name="sn2" id="sn2">
+    <input type="button" value="Resultado" id="botão" onclick="somar()">
+    <div id="res">Resutado vai ser aqui</div>
+
+    <script>
+        function somar() {
+        var n1 = window.document.querySelector('input#sn1')
+        var n2 = window.document.querySelector('input#sn2')
+        var resu = window.document.getElementById('res')
+        var nu1 = Number(n1.value)
+        var nu2 = Number(n2.value)
+        var s = nu1 + nu2
+        resu.innerText = `A soma entre ${nu1} e ${nu2} é de ${s}`
+        resu.style.color = 'violet'
+        } 
+
+    </script>
+    
+</body>
+</html>

@@ -1,0 +1,30 @@
+body {
+    background: linear-gradient(to right, rgb(60, 202, 245), rgb(0, 0, 255) );
+    font-family: 'Orbitron', sans-serif;
+
+
+}
+
+header {
+    color: white;
+    text-align:center;
+}
+
+section {
+    background: white;
+    border-radius: 10px;
+    padding: 15px;
+    width: 500px;
+    margin: auto;
+    box-shadow: 3px 3px 6px #000000;
+}
+
+footer {
+color:white;
+text-align:center;
+font-style:italic;
+
+}
+#finaly{
+    margin-top: 10px;
+}
